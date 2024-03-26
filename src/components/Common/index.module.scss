@@ -1,0 +1,12 @@
+@import "../../assets/variables.scss";
+
+.logo{
+    width: auto;
+    height: 50px;
+    object-fit: contain;
+    background-color: $secondary;
+}
+
+.imageContainer{
+    flex: 1;
+}

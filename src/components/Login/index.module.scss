@@ -1,0 +1,41 @@
+
+@import "../../assets/variables.scss";
+
+
+.loginContainer{
+    height: 90%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginFormContainer{
+    width: 350px;
+    background-color: #fff;
+    elevation: 1;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid $form_border;
+}
+
+.inputContainer{
+    margin: 14px 0;
+}
+
+.signInText{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $primary;
+}
+
+.signInDesc{
+    color: $default_text;
+    line-height: 22px;
+}
+
+.forgot{
+    align-self: center;
+    line-height: 50px;
+    color: $link_color;
+}
+
