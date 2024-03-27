@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from '../navigation';
-import {NavigationContainer} from '@react-navigation/native';
 import {StatusBar, useColorScheme} from 'react-native';
+import 'react-native-gesture-handler';
 
 const MainWrapper = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -10,9 +10,7 @@ const MainWrapper = () => {
   return (
     <>
       <StatusBar backgroundColor={background} />
-      <NavigationContainer>
-        <Main />
-      </NavigationContainer>
+      <Main />
     </>
   );
 };

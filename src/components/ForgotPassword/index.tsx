@@ -5,7 +5,6 @@ import TextInputComponent from '../Layout/Input/TextInput';
 import styles from '../Login/index.module.scss';
 import {useNavigation} from '@react-navigation/native';
 import {Routes} from '../../navigation/routes';
-import WithLogoHeader from '../Common/Header';
 
 const ForgotPasswordComponent = () => {
   const navigation = useNavigation();
@@ -15,24 +14,22 @@ const ForgotPasswordComponent = () => {
   };
 
   return (
-    <WithLogoHeader>
-      <View style={styles.loginContainer}>
-        <View style={styles.loginFormContainer}>
-          <Text style={styles.signInText}>Forgot Password</Text>
-          <Text style={styles.signInDesc}>Reset your password</Text>
+    <View style={styles.loginContainer}>
+      <View style={styles.loginFormContainer}>
+        <Text style={styles.signInText}>Forgot Password</Text>
+        <Text style={styles.signInDesc}>Reset your password</Text>
 
-          <View style={styles.inputContainer}>
-            <TextInputComponent placeholder="Enter your email" />
-          </View>
-
-          <PrimaryButton title="Reset password" onPress={() => {}} />
-
-          <Pressable onPress={handlePress}>
-            <Text style={styles.forgot}>Already have an account</Text>
-          </Pressable>
+        <View style={styles.inputContainer}>
+          <TextInputComponent placeholder="Enter your email" />
         </View>
+
+        <PrimaryButton title="Reset password" onPress={() => {}} />
+
+        <Pressable onPress={handlePress}>
+          <Text style={styles.forgot}>Already have an account</Text>
+        </Pressable>
       </View>
-    </WithLogoHeader>
+    </View>
   );
 };
 

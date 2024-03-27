@@ -1,0 +1,21 @@
+@import "../../assets/variables.scss";
+
+.statsCard{
+    height: 80px;
+    width: 90px;
+    margin: 0 5px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    border: 4px solid #ececec;
+    elevation: 2;
+}
+
+.statsCount{
+    align-self: center;
+    font-size: 2rem;
+}
+
+.statsLabel{
+    align-self: center;
+    font-size: .8rem;
+}

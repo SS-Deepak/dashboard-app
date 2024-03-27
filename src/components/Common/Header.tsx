@@ -1,4 +1,4 @@
-import {Image, View} from 'react-native';
+import {Image, Text, TouchableHighlight, View} from 'react-native';
 import React, {ReactNode} from 'react';
 import styles from './index.module.scss';
 
@@ -11,6 +11,11 @@ const WithLogoHeader = ({children}: {children?: ReactNode}) => {
         }}
         style={styles.logo}
       />
+
+      <TouchableHighlight style={styles.headerUserLogo}>
+        <Text>User</Text>
+      </TouchableHighlight>
+
       {children}
     </View>
   );

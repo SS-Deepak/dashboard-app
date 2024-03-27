@@ -1,17 +1,24 @@
 import React from 'react';
-import {createDrawerNavigator} from '@react-navigation/drawer';
 import {Routes} from './routes';
-import Sites from '../components/Sites';
-import Dashboard from '../components/Dashboard';
+import styles from './index.module.scss';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import SubHeader from '../components/Layout/SubHeader';
 
-const Drawer = createDrawerNavigator();
+const Stack = createNativeStackNavigator();
 
 const PrivateRoutes = () => {
   return (
-    <Drawer.Navigator initialRouteName={Routes.DASHBOARD}>
-      <Drawer.Screen name={Routes.DASHBOARD} component={Dashboard} />
-      <Drawer.Screen name={Routes.SITES} component={Sites} />
-    </Drawer.Navigator>
+    <Stack.Navigator
+      initialRouteName={Routes.MENU}
+      screenOptions={{contentStyle: styles.contentStyle}}>
+      <Stack.Screen
+        name={Routes.MENU}
+        component={SubHeader}
+        options={{
+          headerShown: false,
+        }}
+      />
+    </Stack.Navigator>
   );
 };
 

@@ -4,6 +4,12 @@ export enum Routes {
   FORGOT_PASSWORD = 'FORGOT_PASSWORD',
 
   // private routes
+  MENU = 'MENU',
+
   DASHBOARD = 'DASHBOARD',
   SITES = 'SITES',
+  ORDERS = 'ORDERS',
+  CONTACTS = 'CONTACTS',
+  PRODUCTS = 'PRODUCTS',
+  REPORTS = 'REPORTS',
 }

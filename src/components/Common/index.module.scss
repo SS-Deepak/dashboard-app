@@ -10,3 +10,15 @@
 .imageContainer{
     flex: 1;
 }
+
+.headerUserLogo{
+    position: absolute;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $default_text;
+}
