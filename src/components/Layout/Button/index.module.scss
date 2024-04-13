@@ -1,9 +1,9 @@
 @import "../../../assets/variables.scss";
 
 .primaryButton{
-    background: $primary !important;
+    background: $primary;
 }
 
 .primaryButton:hover{
-    background: $primary_hover !important;
+    background: $primary_hover;
 }

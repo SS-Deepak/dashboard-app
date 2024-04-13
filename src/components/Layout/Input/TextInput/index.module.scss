@@ -3,11 +3,7 @@
 .inputText {
     font-size: 14px;
     color: #8e8d8d;
-    background-color: #fdfdfd;
-    border: 1px solid #e7e7e7;
     padding: 10px;
-    margin: 5px 0;
-    border-radius: 7px;
     width: 100%;
     height: 40px;
 }
@@ -17,4 +13,8 @@
     border-color: $input_focus;
     box-shadow: 0 0 8px $input_focus_shadow;
     outline: none;
+}
+
+.inputContainer{
+    width: 400;
 }

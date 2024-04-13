@@ -1,9 +1,9 @@
 import React from 'react';
 import {Button, ButtonProps} from '@rneui/themed';
-import styles from './index.module.scss';
+import VARIABLES from '../../../assets/variables';
 
 const PrimaryButton = (props: ButtonProps) => {
-  return <Button style={styles.primaryButton} {...props} />;
+  return <Button {...props} color={VARIABLES.primary} />;
 };
 
 export default PrimaryButton;

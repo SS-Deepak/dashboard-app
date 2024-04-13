@@ -1,0 +1,86 @@
+@import "../../../assets/variables.scss";
+
+.container {
+    background: transparent;
+}
+
+.header {
+    height: 40px;
+    background-color: #fefefe;
+}
+
+.wrapper {
+    background-color: transparent;
+    flex-direction: row;
+}
+
+.title {
+    flex: 1;
+}
+
+.row {
+    background-color: #fff;
+    height: 60px;
+}
+
+.alter {
+    background-color: #efefef;
+}
+
+.text {
+    margin-left: 5px;
+}
+
+.textHeader {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.thumbnailContainer {
+    align-self: center;
+    height: 40px;
+    width: 40px;
+    background-color: $list_label_color;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.thumbnail {
+    font-size: 16px;
+    color: #fff;
+}
+
+.siteTitle {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.sitePageCount {
+    font-size: 12px;
+}
+
+.actionButtonContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.headerContainer {
+    margin-bottom: 10px;
+}
+
+.headerSearchContainer {
+    padding: 0;
+    background-color: transparent;
+}
+
+.headerSearchInputContainer {
+    background-color: #fefefe;
+    height: 40px;
+}
+
+.headerSearchInput {
+    font-size: 14px;
+}

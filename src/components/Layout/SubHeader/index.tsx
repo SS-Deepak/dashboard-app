@@ -8,13 +8,14 @@ import Orders from '../../Orders';
 import Contacts from '../../Contacts';
 import Products from '../../Products';
 import Reports from '../../Reports';
+import styles from './index.module.scss';
 
 const Tabs = createBottomTabNavigator();
 
 const SubHeader = () => {
   return (
     <Tabs.Navigator
-      initialRouteName={Routes.DASHBOARD}
+      initialRouteName={Routes.SITES}
       screenOptions={{
         headerShown: false,
         tabBarStyle: {
@@ -25,7 +26,8 @@ const SubHeader = () => {
         },
         tabBarActiveTintColor: '#fff',
         tabBarActiveBackgroundColor: '#207cb9',
-      }}>
+      }}
+      sceneContainerStyle={styles.tabContainer}>
       <Tabs.Screen
         name={Routes.DASHBOARD}
         component={Dashboard}

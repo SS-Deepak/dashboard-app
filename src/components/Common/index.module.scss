@@ -22,3 +22,37 @@
     justify-content: center;
     border: 2px solid $default_text;
 }
+
+.chipButtonContainer{
+    min-width: 60px;
+    margin: 0 2px;
+    border-radius: 10px;
+}
+
+.chipButtonLabel{
+    text-transform: capitalize;
+    font-size: 13px;
+    line-height: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.primaryChip{
+    height: 27px;
+    background-color: $primary_btn;
+}
+
+.warnChip{
+    height: 27px;
+    background-color: $warn_btn;
+}
+
+.successChip{
+    height: 27px;
+    background-color: $success_btn;
+}
+
+.dangerChip{
+    height: 27px;
+    background-color: $danger_btn;
+}
